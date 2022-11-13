@@ -10,12 +10,22 @@ const Header = (props) => {
 const Content = (props) => {
   return (
     <div>
-      <p>{props.part1} {props.exercise1}</p>
-      <p>{props.part2} {props.exercise2}</p>
-      <p>{props.part3} {props.exercise3}</p>
+      <Part p1={props.part1} e1={props.exercise1}/>
+      <Part p2={props.part2} e2={props.exercise2}/>
+      <Part p3={props.part3} e3={props.exercise3}/>
     </div>
   )
   }
+
+const Part = (props) => {
+  return (
+    <div>
+      <p>{props.p1} {props.e1}</p>
+      <p>{props.p2} {props.e2}</p>
+      <p>{props.p3} {props.e3}</p>
+    </div>
+  )
+}
 
 const Total = (props) => {
   return (
