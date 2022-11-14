@@ -11,8 +11,8 @@ const Content = (props) => {
   return (
     <div>
       <Part p1={props.parts[0].name} e1={props.parts[0].exercises}/>
-      <Part p2={props.parts[1].name} e1={props.parts[1].exercises}/>
-      <Part p3={props.parts[2].name} e1={props.parts[2].exercises}/>
+      <Part p2={props.parts[1].name} e2={props.parts[1].exercises}/>
+      <Part p3={props.parts[2].name} e3={props.parts[2].exercises}/>
     </div>
   )
   }
